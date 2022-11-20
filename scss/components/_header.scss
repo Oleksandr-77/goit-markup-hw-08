@@ -1,0 +1,40 @@
+.header {
+  border-bottom: 1px solid var(--header-border-color);
+}
+
+.header__container {
+  display: flex;
+}
+
+.header__contact-firm {
+  display: flex;
+  gap: 30px;
+}
+
+.header__contact-firm-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--primery-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: color 250ms var(--time-function), fill 250ms var(--time-function);
+
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.header__contact-firm-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+

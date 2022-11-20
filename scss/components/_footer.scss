@@ -1,0 +1,97 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--block-color);
+  }
+  
+  .footer__container {
+    display: flex;
+    gap: 93px;
+    align-items: baseline;
+  }
+
+  .footer-net__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+  
+    color: var(--primary-white-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+  
+  .footer-net__list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .footer-net__link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--primary-white-color);
+    background-color: var(--fone-color-icon);
+    border-radius: 50%;
+    transition: fill 250ms var(--time-function),
+      background-color 250ms var(--time-function);
+  
+  
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--primary-white-color);
+  }
+}
+  
+  /* footer sign */
+  
+  .footer-sign__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+  
+    color: var(--primary-white-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+  
+  .footer-sign__form {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer-sign__input {
+    width: 358px;
+    padding: 15px 175px 15px 16px;
+    color: var(--accent-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: var(--block-color);
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.25;
+    transition: color 250ms var(--time-function),
+      box-shadow 250ms var(--time-function),
+      background-color 250ms var(--time-function),
+      border 250ms var(--time-function);
+ 
+  
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+  
+  .footer-sing__primary-button {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer-sing__icon-send {
+    fill: var(--primary-white-color);
+  }

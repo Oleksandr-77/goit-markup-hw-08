@@ -1,0 +1,22 @@
+.address__link {
+    color: var(--color-text-number);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    transition: color 250ms var(--time-function);
+ 
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+  .address__item {
+    margin-top: 9px;
+    margin-bottom: 9px;
+  }
+
+  .address__link--white {
+    color: var(--primary-white-color);
+    transition: color 250ms var(--time-function);
+  }
