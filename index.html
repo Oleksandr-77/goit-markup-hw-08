@@ -56,11 +56,17 @@
             >
           </li>
         </ul>
+        <button class="header__burger-menu js-open-menu">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
     <main>
       <!-- Герой -->
+
       <section class="hero">
         <div class="container hero__container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
@@ -75,6 +81,7 @@
       </section>
 
       <!-- Особливості компанії -->
+
       <section class="feature">
         <div class="container">
           <h2 class="visually-hidden">Особливості компанії</h2>
@@ -129,8 +136,10 @@
           </ul>
         </div>
       </section>
+      -->
 
       <!-- Чим ми займаємося -->
+
       <section class="work">
         <div class="container">
           <h2 class="title">Чим ми займаємося</h2>
@@ -176,6 +185,7 @@
       </section>
 
       <!-- Команда компанії-->
+
       <section class="team">
         <div class="container">
           <h2 class="title">Наша команда</h2>
@@ -337,6 +347,7 @@
       </section>
 
       <!-- clients -->
+
       <section class="clients">
         <div class="container">
           <h2 class="title">Постійні клієнти</h2>
@@ -383,6 +394,7 @@
     </main>
 
     <!-- Футер -->
+
     <footer class="footer">
       <div class="container footer__container">
         <div>
@@ -414,7 +426,9 @@
             </ul>
           </address>
         </div>
+
         <!-- footer-net-icon -->
+
         <div class="footer-net">
           <p class="footer-net__title">приєднуйтесь</p>
           <ul class="footer-net__list list">
@@ -447,6 +461,7 @@
         </div>
 
         <!-- Footer-sign -->
+
         <div class="footer-sign">
           <p class="footer-sign__title">Підпишіться на розсилку</p>
           <form class="footer-sign__form">
@@ -473,6 +488,63 @@
         </div>
       </div>
     </footer>
+
+    <!-- mobile-menu -->
+
+    <div class="mobile-menu js-menu-container">
+      <div class="container">
+        <button class="mobile-menu__clouse-button js-close-menu" type="button">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__list list">
+            <li>
+              <a
+                href="./index.html"
+                class="mobile-menu__nav-link link nav__link--current"
+                >Студія</a
+              >
+            </li>
+            <li>
+              <a href="./portfolio.html" class="mobile-menu__nav-link link"
+                >Портфоліо</a
+              >
+            </li>
+            <li><a href="#" class="mobile-menu__nav-link link">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="mobile-menu__contact-firm-list list">
+          <li>
+            <a href="#" class="mobile-menu__contact-firm-link link"
+              ><svg class="header__contact-firm-icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="#" class="mobile-menu__contact-firm-link link"
+              ><svg class="header__contact-firm-icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-menu__social-list list">
+          <li>
+            <a href="#" class="mobile-menu__social-link link">Instagram</a>
+          </li>
+          <li><a href="#" class="mobile-menu__social-link link">Twitter</a></li>
+          <li>
+            <a href="#" class="mobile-menu__social-link link">Facebook</a>
+          </li>
+          <li>
+            <a href="#" class="mobile-menu__social-link link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <!-- Modal -->
 
@@ -584,6 +656,7 @@
       </div>
     </div>
 
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

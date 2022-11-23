@@ -8,8 +8,13 @@
   }
   
   .nav__list {
-    display: flex;
+    display: none;
     gap: 50px;
+
+    @media (min-width: 480px) {
+      display: flex;
+    }
+
   }
   
   .nav__link {
