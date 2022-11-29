@@ -30,6 +30,18 @@
     }
   }
 
+  .footer__adress {
+    @media (min-width: 769px) and  (max-width: 1199px) {
+      margin-left: 76px;
+    }
+  }
+
+  .footer-net {
+    @media (min-width: 769px) and  (max-width: 1199px) {
+    margin-right: 89px;
+    }
+  }
+
   .footer-net__title {
     margin-top: 0;
     margin-bottom: 20px;
