@@ -30,9 +30,13 @@
 
 .header__burger-menu {
   border: var(--primary-white-color);
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
+}
+
+.header__burger-menu-svg {
+  fill: var(--title-text-color);
 }
 
 .header__contact-firm {
@@ -43,13 +47,13 @@
   //   display: flex;
   // }
 
-  @media (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     margin-left: auto;
    }
 
-   @media (min-width: 1200px) {
+   @media screen and (min-width: 1200px) {
     display: flex;
     gap: 30px;
   }
@@ -70,12 +74,14 @@
   letter-spacing: 0.02em;
   transition: color 250ms var(--time-function), fill 250ms var(--time-function);
 
-  @media (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     align-items: center;
     padding: 0;
     justify-content: start;
     margin-top: 10px;
+    font-size: 12px;
+    line-height: 1.17;
  }
 
   &:hover,

@@ -1,9 +1,6 @@
 .nav {
     display: flex;
     margin-right: auto;
-    // -webkit-box-align: center;
-    // -ms-flex-align: center;
-    // align-items: center;
   }
   
   .nav__logo {
@@ -14,7 +11,7 @@
     display: none;
     gap: 50px;
 
-    @media (min-width: 768px) {
+    @media screen and (min-width: 768px) {
       display: flex;
     }
 

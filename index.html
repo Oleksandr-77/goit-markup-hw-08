@@ -57,7 +57,7 @@
           </li>
         </ul>
         <button class="header__burger-menu js-open-menu">
-          <svg width="40" height="40">
+          <svg class="header__burger-menu-svg" width="40" height="40">
             <use href="./images/icons.svg#icon-menu_40px"></use>
           </svg>
         </button>
@@ -191,9 +191,16 @@
           <ul class="team__list list">
             <li class="team__item">
               <img
-                class="team-image"
-                src="./images/team1.jpg"
+                srcset="
+                  ./images/demynenko-lapt-270.jpg 270w,
+                  ./images/demynenko-lapt-540.jpg 540w,
+                  ./images/demynenko-tabl-354.jpg 354w,
+                  ./images/demynenko-tabl-708.jpg 708w
+                  ./images/demynenko-mob-450.jpg 450w,
+                  ./images/demynenko-mob-900.jpg 900w"
+                src="./images/demynenko-lapt-270.jpg"
                 alt="Фото Ігора Дем'яненко"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
               />
               <div class="team__description">
                 <h3 class="team__title">Ігор Дем'яненко</h3>
@@ -229,9 +236,16 @@
             </li>
             <li class="team__item">
               <img
-                class="team-image"
-                src="./images/team2.jpg"
+                srcset="
+                  ./images/repina-lapt-270.jpg 270w,
+                  ./images/repina-lapt-540.jpg 540w,
+                  ./images/repina-tabl-354.jpg 354w,
+                  ./images/repina-tabl-708.jpg 708w
+                  ./images/repina-mob-450.jpg 450w,
+                  ./images/repina-mob-900.jpg 900w"
+                src="./images/repina-lapt-270.jpg"
                 alt="Фото Ольги Рєпіної"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
               />
               <div class="team__description">
                 <h3 class="team__title">Ольга Рєпіна</h3>
@@ -267,9 +281,16 @@
             </li>
             <li class="team__item">
               <img
-                class="team-image"
-                src="./images/team3.jpg"
+                srcset="
+                  ./images/tarasov-lapt-270.jpg 270w,
+                  ./images/tarasov-lapt-540.jpg 540w,
+                  ./images/tarasov-tabl-354.jpg 354w,
+                  ./images/tarasov-tabl-708.jpg 708w
+                  ./images/tarasov-mob-450.jpg 450w,
+                  ./images/tarasov-mob-900.jpg 900w"
+                src="./images/tarasov-lapt-270.jpg"
                 alt="Фото Миколи Тарасова"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
               />
               <div class="team__description">
                 <h3 class="team__title">Микола Тарасов</h3>
@@ -305,9 +326,16 @@
             </li>
             <li class="team__item">
               <img
-                class="team-image"
-                src="./images/team4.jpg"
+                srcset="
+                  ./images/ermakov-lapt-270.jpg 270w,
+                  ./images/ermakov-lapt-540.jpg 540w,
+                  ./images/ermakov-tabl-354.jpg 354w,
+                  ./images/ermakov-tabl-708.jpg 708w
+                  ./images/ermakov-mob-450.jpg 450w,
+                  ./images/ermakov-mob-900.jpg 900w"
+                src="./images/ermakov_lapt-270.jpg"
                 alt="Фото Михайла Єрмакова"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
               />
               <div class="team__description">
                 <h3 class="team__title">Михайло Єрмаков</h3>
@@ -487,9 +515,9 @@
     <!-- mobile-menu -->
 
     <div class="mobile-menu js-menu-container">
-      <div class="container">
+      <div class="container mobile-menu__container">
         <button class="mobile-menu__clouse-button js-close-menu" type="button">
-          <svg class="mobile-menu__clouse-button-sxg" width="40" height="40">
+          <svg class="mobile-menu__clouse-button-svg" width="40" height="40">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
@@ -510,30 +538,34 @@
             <li><a href="#" class="mobile-menu__nav-link link">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="mobile-menu__contact-firm-list list">
-          <li>
-            <a href="#" class="mobile-menu__contact-firm-link link"
-              >+38 096 111 11 11</a
-            >
-          </li>
-          <li>
-            <a href="#" class="mobile-menu__contact-firm-link-mail link"
-              >info@devstudio.com</a
-            >
-          </li>
-        </ul>
-        <ul class="mobile-menu__social-list list">
-          <li>
-            <a href="#" class="mobile-menu__social-link link">Instagram</a>
-          </li>
-          <li><a href="#" class="mobile-menu__social-link link">Twitter</a></li>
-          <li>
-            <a href="#" class="mobile-menu__social-link link">Facebook</a>
-          </li>
-          <li>
-            <a href="#" class="mobile-menu__social-link link">LinkedIn</a>
-          </li>
-        </ul>
+        <div>
+          <ul class="mobile-menu__contact-firm-list list">
+            <li>
+              <a href="#" class="mobile-menu__contact-firm-link link"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li>
+              <a href="#" class="mobile-menu__contact-firm-link-mail link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu__social-list list">
+            <li>
+              <a href="#" class="mobile-menu__social-link link">Instagram</a>
+            </li>
+            <li>
+              <a href="#" class="mobile-menu__social-link link">Twitter</a>
+            </li>
+            <li>
+              <a href="#" class="mobile-menu__social-link link">Facebook</a>
+            </li>
+            <li>
+              <a href="#" class="mobile-menu__social-link link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 

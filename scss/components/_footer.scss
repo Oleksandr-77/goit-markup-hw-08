@@ -9,7 +9,7 @@
   .footer__container {
     display: flex;
     flex-direction: column;
-    gap: 93px;
+    gap: 60px;
     justify-content: center;
     justify-items: center;
     align-items: center;
@@ -19,25 +19,26 @@
       flex-wrap: wrap;
     }
 
-    @media (min-width: 769px) and  (max-width: 1199px) {
+    @media screen and (min-width: 769px) and  (max-width: 1199px) {
       justify-content: space-between;
       align-items: baseline;
     }
 
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
       flex-wrap: nowrap;
       align-items: baseline;
+      gap: 93px;
     }
   }
 
   .footer__adress {
-    @media (min-width: 769px) and  (max-width: 1199px) {
+    @media screen and (min-width: 769px) and  (max-width: 1199px) {
       margin-left: 76px;
     }
   }
 
   .footer-net {
-    @media (min-width: 769px) and  (max-width: 1199px) {
+    @media screen and (min-width: 769px) and  (max-width: 1199px) {
     margin-right: 89px;
     }
   }
@@ -52,7 +53,7 @@
     line-height: 1.14;
     text-transform: uppercase;
 
-    @media (max-width: 1200px) {
+    @media screen and (max-width: 1200px) {
       text-align: center;
     }
   }
@@ -86,7 +87,7 @@
   /* footer sign */
 
   .footer-sign {
-    @media (min-width: 769px) and  (max-width: 1199px) {
+    @media screen and (min-width: 769px) and  (max-width: 1199px) {
       margin-left: auto;
       margin-right: auto;
     }
@@ -102,7 +103,7 @@
     line-height: 1.14;
     text-transform: uppercase;
 
-    @media (max-width: 1200px) {
+    @media screen and (max-width: 1200px) {
       text-align: center;
     }
   }
@@ -110,30 +111,31 @@
   .footer-sign__form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 
     @media screen and (min-width: 768px) {
       flex-direction: row;
       flex-wrap: wrap;
     }
 
-    @media (min-width: 768px) and  (max-width: 1199px) {
+    @media screen and (min-width: 768px) and  (max-width: 1199px) {
       flex-direction: column;
     }
     
 
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
       flex-wrap: nowrap;
+      gap: 10px;
     }
     
-    @media (max-width: 1200px) {
-    justify-items: center;
-    align-items: center;
+    @media screen and (max-width: 1200px) {
+      justify-items: center;
+      align-items: center;
     }
   }
   
   .footer-sign__input {
-    width: 358px;
+    width: 458px;
     padding: 15px 175px 15px 16px;
     color: var(--accent-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -145,6 +147,14 @@
       box-shadow 250ms var(--time-function),
       background-color 250ms var(--time-function),
       border 250ms var(--time-function);
+
+    @media screen and (max-width: 479px) {
+      max-width: 290px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 350px;
+    }
  
   
   &:hover,

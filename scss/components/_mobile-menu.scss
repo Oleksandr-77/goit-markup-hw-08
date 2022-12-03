@@ -1,5 +1,7 @@
 .mobile-menu {
     @extend %list !optional;
+
+    height: 796px;
     
     position: fixed;
     top: 0;
@@ -8,12 +10,15 @@
     height: 100%;
     width: 100%;
     background-color: var(--primary-white-color);
-    padding: 48px 25px;
+    padding: 48px 40px;
     z-index: 1;
+
+    overflow-y: scroll;
 
     &.is-open {
         display: block;
     }
+    
 
     &__clouse-button {
         position: absolute;
@@ -27,56 +32,70 @@
     &__clouse-button:focus {
         fill: var(--accent-color);
     }
-}
 
-.mobile-menu__nav-link {
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    color: #212121;
-    text-decoration: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    &__clouse-button-svg {
+        fill: var(--title-text-color);
+    }
 
-.mobile-menu__contact-firm-link-mail {
-    display: block;
-    margin-top: 32px;
-    margin-bottom: 64px;
+    &__container {
+        margin: 0;
+        padding: 0;
+        max-width: 450px;
+        display: flex;
+        flex-direction: column;
+        gap: 302px;
+    }
 
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1.16;
-    letter-spacing: 0.02em;
-    color: var(--primary-text-color);
-}
+    &__nav-link {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: #212121;
+        text-decoration: none;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
-.mobile-menu__contact-firm-link {
-    display: block;
-    margin-top: 302px;
+    &__contact-firm-link-mail {
+        display: block;
+        margin-top: 32px;
+        margin-bottom: 64px;
 
-    font-weight: 500;
-    font-size: 34px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    color: var(--accent-color);
-}
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+        color: var(--primary-text-color);
+    }
 
-.mobile-menu__nav-item {
-    margin-top: 36px;
-    margin-bottom: 32px;
-}
+    &__contact-firm-link {
+        // display: block;
+        // margin-top: 302px;
 
-.mobile-menu__social-list {
-    display: flex;
-    gap: 20px;
-}
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: var(--accent-color);
+    }
 
-.mobile-menu__social-link {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.22;
-    letter-spacing: 0.02em;
-    color: var(--accent-color); 
+    &__nav-item {
+        margin-top: 36px;
+        margin-bottom: 32px;
+    }
+
+    &__social-list {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 48px;
+    }
+
+    &__social-link {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        color: var(--accent-color); 
+    }
 }
