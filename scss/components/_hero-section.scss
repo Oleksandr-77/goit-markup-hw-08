@@ -21,7 +21,7 @@
 
     @media screen and (max-width: 767px) {
       background-image: var(--hero-overlay), url("../images/hero-mob-480.jpg");
-      max-width: 480px;
+      // max-width: 480px;
       @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
@@ -30,7 +30,7 @@
     }
     @media screen and (min-width: 768px) {
       background-image: var(--hero-overlay), url("../images/hero-tabl-768.jpg");
-      max-width: 768px;
+      // max-width: 768px;
       @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
