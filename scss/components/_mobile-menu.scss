@@ -1,14 +1,12 @@
 .mobile-menu {
     @extend %list !optional;
-
-    height: 796px;
     
     position: fixed;
     top: 0;
     left: 0;
     display: none;
-    height: 100%;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: var(--primary-white-color);
     padding: 48px 40px;
     z-index: 1;
@@ -40,10 +38,10 @@
     &__container {
         margin: 0;
         padding: 0;
-        max-width: 450px;
+        height: 100%;
         display: flex;
         flex-direction: column;
-        gap: 302px;
+        justify-content: space-between;
     }
 
     &__nav-link {
@@ -70,9 +68,6 @@
     }
 
     &__contact-firm-link {
-        // display: block;
-        // margin-top: 302px;
-
         font-weight: 500;
         font-size: 34px;
         line-height: 1.17;
@@ -87,7 +82,7 @@
 
     &__social-list {
         display: flex;
-        gap: 20px;
+        justify-content: space-between;
         margin-bottom: 48px;
     }
 

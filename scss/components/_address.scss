@@ -1,5 +1,6 @@
 .address__link {
   @extend %list !optional;
+  
     color: var(--color-text-number);
     font-style: normal;
     font-size: 14px;
